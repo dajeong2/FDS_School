@@ -1,0 +1,69 @@
+body * {
+	box-sizing: border-box;
+}
+
+body {
+	width: 1920px;
+	padding: 63px;
+	/*14px/24px*/
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: -0.25px;
+/*    background-image: linear-gradient(180deg, transparent 95%, #8C41EC 95%);
+    background-size: 1px 21px;*/
+}
+
+/*타이포 크기 설정*/
+h1,h2,h3,h4,h5,h6,p,span {
+	margin-bottom: 21px;
+}
+
+h1,h2,h3 { font-weight: 200;  }
+h1 { font-size: 54.63px;}
+h2 { font-size: 41.61px; }
+h1,h2 { line-height: 63px; }
+h3 { font-size: 31.69px; }
+h4 { font-size: 24.1355px; }
+h5 { font-size: 18.382px; }
+h3,h4,h5 { line-height: 42px; }
+
+/*section*/
+[class$="-box"] { width: 100%; }
+[class$="-rule"] { 
+	width: 50%; margin-bottom: 63px; 
+}
+[class$="-guide"] { width: 50%; }
+
+
+/*typography-box*/
+div.form {
+	margin-bottom: 21px;
+	/*float: left;*/
+}
+
+.title,.set,.span {
+	color: #C0C1C2;
+	/*float: left;	*/
+} 
+.typography-box .typography-rule .title {  }
+.typography-box .typography-rule .set { line-height: 42px; }
+span { 
+	display: block;
+	margin-right: 45px;
+	float: left;	
+	font-size: 14px;
+	color: #C0C1C2;
+ }
+.title {
+	width: 187px;
+	float: left;
+}
+ span.index { 
+	width: 105px;
+  }
+
+
+
+
+
+

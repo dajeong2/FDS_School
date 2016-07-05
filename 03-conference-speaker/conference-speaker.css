@@ -1,0 +1,28 @@
+.conference-speaker {
+	width: 900px;
+}
+
+.conference-speaker .speaker {
+	float: left;
+	width: 100%;
+}
+.conference-speaker .speaker .speaker-photo {
+	float: left;
+}
+
+.speaker-photo.layout-half{
+	width: 50%;
+}
+.speaker-bio.layout-half{
+	width: 50%;
+}
+
+.conference-speaker .speaker .speaker-bio {
+	width: 50%;
+	overflow: hidden;
+}
+
+/*마우스 호버*/
+.conference-speaker .speaker:hover {
+  background: #fff2e2;	
+}

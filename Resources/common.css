@@ -1,0 +1,36 @@
+/*박스 사이징: IE 8+ : body내부의 요소 */
+body *, body *::before, body *::after {
+	box-sizing: border-box;
+}
+
+/* 목록 초기화 */
+.reset-list ul,
+.reset-list ol,
+ul.reset-list,
+ol.reset-list {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style: none;
+}
+
+
+/*이미지 blank-bottom*/
+.blank-bottom-img img + *,
+img.blank-bottom + * {
+  overflow: hidden;
+}
+
+/*IR 배경이미지 기법*/
+
+/*클리어 픽스*/
+.clearfix,
+.cf::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+.lt-ie8 .clearfix,
+.li-ie8 .cf {
+	zoom: 1;
+}

@@ -1,0 +1,46 @@
+/*백그라운드 사진 입히기*/
+body {
+	margin: 0;
+	height: 100vh;
+	background: url("../images/landscape.jpeg") no-repeat center center;
+	background-size: cover; /*<->contain*/
+}
+
+
+[class$="-box"] {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background: hsla(0, 50%, 100%, 0.3);	
+}
+
+.utility-box {
+	top: 0;
+	left: 0;
+}
+
+.weather-box {
+	top: 0;
+	right: 0;
+}
+
+.todo-box {
+	right: 0;
+	bottom: 0;
+}
+
+.info-box {
+ 	left: 0;
+	bottom: 0;
+}
+
+.quote-box {
+	width: 400px;
+	height: 80px;
+	left: 50%;
+	bottom: 0;
+	/*화면의 가운데에 위치할 수 있게 영역의 반만큼 이동*/
+	margin-left: -200px;
+
+}
+
