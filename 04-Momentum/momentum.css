@@ -1,7 +1,13 @@
-/*백그라운드 사진 입히기*/
+body * {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	height: 100vh;
+	font-family: "helvetica Neue";
+	color: #fff;
+	text-shadow: 0 1px 5px rgba(0,0,0,.1);
 	background: url("../images/landscape.jpeg") no-repeat center center;
 	background-size: cover; /*<->contain*/
 }
@@ -9,38 +15,74 @@ body {
 
 [class$="-box"] {
 	position: absolute;
-	width: 200px;
-	height: 100px;
-	background: hsla(0, 50%, 100%, 0.3);	
+	/*width: 200px;
+	height: 100px;*/
+/* 	background: hsla(0, 50%, 100%, 0.3);	 */
 }
 
 .utility-box {
-	top: 0;
-	left: 0;
+	font-size: 20px;
+	color: #F4F4EE;
+	top: 2%;
+	left: 2%;
 }
 
 .weather-box {
-	top: 0;
-	right: 0;
+	top: 2%;
+	right: 1%;
+	font-size: 20px;
+	color: #F4F4EE;	
+}
+.main-box {
+	top: 50%;
+	left: 50%;
+	margin-left: -287px;
+	margin-top: -100px; 
+	text-align: center;
+	
+}
+.main-box .time {
+	font-weight: 500;
+	font-size: 1125%;
+	line-height: 1;
+	letter-spacing: -5px;
+}
+.main-box .greeting-message {
+
+    font-size: 326%;
+    font-weight: 500;
+}
+.main-box .question-message {
+	font-size: 200%;
+	font-weight: 200;
+	margin: 0px auto;
 }
 
 .todo-box {
 	right: 0;
-	bottom: 0;
+	bottom: 5%;
+	font-size: 20px;
+	color: #F4F4EE;
 }
 
 .info-box {
- 	left: 0;
-	bottom: 0;
+ 	left: 2;
+ 	bottom: 2%;
+ 	font-size: 15px;
+ 	font-weight: 100;
+	color: #F4F4EE;
+}
+.info-box.ir::before {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: #F4F4EE;
 }
 
 .quote-box {
-	width: 400px;
-	height: 80px;
+	/*width: 400px;
+	height: 80px;*/
 	left: 50%;
-	bottom: 0;
-	/*화면의 가운데에 위치할 수 있게 영역의 반만큼 이동*/
-	margin-left: -200px;
-
+	bottom: 2%;
+	margin-left: -243.9px;
 }
-
