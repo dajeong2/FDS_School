@@ -23,8 +23,9 @@ img.blank-bottom + * {
 
 /*IR 배경이미지 기법*/
 
+
 /*클리어 픽스*/
-.clearfix,
+.clearfix::after,
 .cf::after {
 	display: block;
 	content: '';
