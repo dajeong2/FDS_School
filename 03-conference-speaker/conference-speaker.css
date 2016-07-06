@@ -1,28 +1,63 @@
-.conference-speaker {
-	width: 900px;
+body * {
+	box-sizing: border-box;
 }
 
-.conference-speaker .speaker {
+img { vertical-align: bottom; }
+
+
+
+.conference-speaker .speakers { width: 900px;}
+
+.conference-speaker .speakers .speakers-photo {
+	display: block;
 	float: left;
-	width: 100%;
 }
-.conference-speaker .speaker .speaker-photo {
+
+.speakers-bio {
+	width: 450px;
+	height: 231px;
+	padding-top: 55px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	/*overflow: hidden;*/
 	float: left;
 }
 
-.speaker-photo.layout-half{
-	width: 50%;
-}
-.speaker-bio.layout-half{
-	width: 50%;
+.speakers-bio.layout-half { 
+	width: 225px;
 }
 
-.conference-speaker .speaker .speaker-bio {
-	width: 50%;
-	overflow: hidden;
+.conference-speaker .speakers .speakers-photo.rightside {
+	float: right;
 }
 
-/*마우스 호버*/
-.conference-speaker .speaker:hover {
-  background: #fff2e2;	
+.speakers-bio.layout-half.rightside {
+	float: right;
 }
+.speakers.layout-half.leftside {
+	width: 450px;
+	float: left;
+}
+
+.conference-speaker .speakers-bio::after {
+	width: 30%;
+	height: 1px;
+	background: #eee;
+}
+.conference-speaker .speakers-bio .speakers-name {
+	font: 19px/1.1 "Montserrat";
+	margin-bottom: 18px;
+}
+
+.conference-speaker .speakers-bio .speakers-dec {
+	font: 16px/1.5 "open-sans";
+	padding-bottom: 13px;
+}
+
+.conference-speaker .speakers-bio .speakers-twitter .ir {
+	background-image: url("../..//")
+	
+}
+
+
