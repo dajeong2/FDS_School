@@ -7,10 +7,10 @@ body {
 	padding: 63px;
 	/*14px/24px*/
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 1.5;
 	letter-spacing: -0.25px;
-/*    background-image: linear-gradient(180deg, transparent 95%, #8C41EC 95%);
-    background-size: 1px 21px;*/
+    background-image: linear-gradient(180deg, transparent 95%, red 95%);
+    background-size: 1px 21px;
 }
 
 /*타이포 크기 설정*/
@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6,p,span {
 	margin-bottom: 21px;
 }
 
-h1,h2,h3 { font-weight: 200;  }
+h1,h2,h3 { font-weight: 400;  }
 h1 { font-size: 54.63px;}
 h2 { font-size: 41.61px; }
 h1,h2 { line-height: 63px; }
@@ -28,39 +28,62 @@ h5 { font-size: 18.382px; }
 h3,h4,h5 { line-height: 42px; }
 
 /*section*/
-[class$="-box"] { width: 100%; }
-[class$="-rule"] { 
-	width: 50%; margin-bottom: 63px; 
+section { 
+	width: 960px;
+	 }
+
+.typograohy div.header {
+
+	width: 960px;
+
 }
-[class$="-guide"] { width: 50%; }
-
-
-/*typography-box*/
-div.form {
-	margin-bottom: 21px;
-	/*float: left;*/
-}
-
-.title,.set,.span {
-	color: #C0C1C2;
-	/*float: left;	*/
-} 
-.typography-box .typography-rule .title {  }
-.typography-box .typography-rule .set { line-height: 42px; }
-span { 
-	display: block;
-	margin-right: 45px;
-	float: left;	
-	font-size: 14px;
-	color: #C0C1C2;
- }
-.title {
-	width: 187px;
+.typography .header .header-cap {
 	float: left;
+	margin: 0;
+	font-size: 17px;
+	color: #AFB0AB;
+	text-transform: uppercase;
 }
- span.index { 
-	width: 105px;
-  }
+.typography .header .set {
+	margin-left: 50px;
+	float: left;
+	color: #AFB0AB;
+}
+.typography .guide {
+	width: 960px;
+}
+
+/*타이포이름포지션속성의 부모요소*/
+.typography .guide .typo-list {
+	/*position: relative;*/
+}
+.typography .guide .name {
+	/*position: absolute;
+	top: translate();*/
+	margin: 0;
+	float: left;
+
+} 
+.typography .guide .name.l3 {
+	line-height: 63px;
+}
+
+.typography .guide .name.l2 {
+	line-height: 42px;
+}
+.typography .guide .dec {
+	float: left;
+	margin-left: 103px;
+	
+} 
+.typography .guide .dec.right {
+	padding-right: 110px;
+	/*야매다롱,,, 어케 맞추는지몰겠당..*/
+	margin-left: 48px;
+} 
+
+
+
 
 
 
