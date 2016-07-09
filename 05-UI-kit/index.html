@@ -12,7 +12,7 @@
 	<section class="typography-section">
 		<section class="header clearfix">
 			<div class="title">typography</div>
-			<p class="set">14px/타입 크기 배율x1.313</p>
+			<p class="set">14px / 타입 크기 배율 x 1.313</p>
 		</section>
 		<section class="container">
 			<ul>
@@ -55,42 +55,183 @@
 			<div class="title">table</div>
 		</section>
 		<section class="container">
-		<th>제목
-			<tr>사망플래그</tr>
-			<td>설마 죽기야 하겠어</td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</th>
-		<th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</th>
-		<th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</th>
-		<th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</th>
-		<th>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</th>
+			  <table class="demo">
+		    	<caption class="readable-hidden focusable">table-guide</caption>
+		   		<colgroup>
+			      <col>
+			      <col>
+			      <col>
+			      <col>
+			      <col>
+		    	</colgroup> 
+		    <tr class="ro-2 col-1">
+		      <th class="col-2">제목</th>
+		      <th>종류</th>
+		      <th>가격</th>
+		      <th>수량</th>
+		      <th>비고</th>		    
+		    </tr>
+		    <tr class="ro-2 col-1">
+		      <td class="col-2">사망 플래그</td>
+		      <td class="col-2 t-center">도서</td>
+		      <td class="col-2 t-center">50,000</td>
+		      <td class="col-2 t-center"></td>
+		      <td class="col-2 t-center">-</td>
+		    </tr>
+		    <tr class="ro-2 col-2">
+		      <td class="col-2">이번이 정말 마지막이야</td>
+		      	<td class="col-2 t-center">도서</td>
+		      	<td class="col-2 t-center">50,000</td>
+		      	<td class="col-2 t-center">212</td>
+		      	<td class="col-2 t-center">재고없음</td>
+		    </tr>
+		    <tr class="ro-2">
+		      	<td class="col-2">곧 돌아올게 기다려</td>
+		      	<td class="col-1 t-center">도서</td>	      
+		      	<td class="col-1 t-center">50,000</td>
+		      	<td class="col-1 t-center">179</td>
+		      	<td class="col-2 t-center">-</td>		
+		     </tr>
+		  </table>
 		</section>	
-
+		<section class="container">
+			  <table class="demo">
+		    	<caption class="readable-hidden focusable">table-guide</caption>
+		   		<colgroup>
+			      <col>
+			      <col>
+			      <col>
+			      <col>
+			      <col>
+		    	</colgroup> 
+		    <tr class="ro-2 col-1">
+		      <th class="col-2"></th>
+		      <th class="col-2"></th>
+		      <th>가격</th>
+		      <th>수량</th>
+		      <th>비고</th>		    
+		    </tr>
+		    <tr class="ro-2 col-1">
+		      <td  rowsan="2" class="col-2">사망 플래그</td>
+		      <td class="col-2 t-center">도서</td>
+		      <td class="col-2 t-center">50,000</td>
+		      <td class="col-2 t-center">300</td>
+		      <td class="col-2 t-center">재고없음</td>
+		    </tr>
+		    <tr class="ro-2 col-2">
+		      <td  rowsan="2" class="col-2"></td>
+		      	<td class="col-2 t-center">E BOOK</td>
+		      	<td class="col-2 t-center">300</td>
+		      	<td class="col-2 t-center">50,000</td>
+		      	<td class="col-2 t-center">-</td>
+		    </tr>
+		    <tr class="ro-2">
+		      	<td rowspan="2" class="col-2">이번이 정말 마지막이야</td>
+		      	<td class="col-1 t-center">도서</td>
+		      	<td class="col-1 t-center">50,000</td>
+		      	<td class="col-1 t-center">212</td>
+		      	<td class="col-2 t-center">재고없음</td>
+		     </tr>
+		     <tr class="ro-2">
+		      	<td rowspan="2" class="col-2"></td>
+		      	<td class="col-1 t-center">도서</td>
+		      	<td class="col-1 t-center">50,000</td>
+		      	<td class="col-1 t-center">179</td>
+		      	<td class="col-2 t-center">-</td>
+		     </tr>
+		  </table>
+		</section>
+	</section>
+	<section class="list-section">
+			<section class="header clearfix">
+				<div class="title">list style</div>
+			</section>	
+			<section class="container">
+				<div class="clearfix first">
+					<div class="col-1 unorder-list">
+							<li>비순차 목록</li>
+								<ul>
+									<li>목록</li>
+									<li>목록</li>
+									<li>목록</li>
+								</ul>								
+							<li>비순차목록</li>	
+							<li>비순차목록</li>	
+					</div>
+					<div class="col-1 order-list">
+							<li>순차 목록</li>
+								<ol>
+									<li>목록</li>
+									<li>목록</li>
+									<li>목록</li>
+								</ol>								
+							<li>순차목록</li>	
+							<li>순차목록</li>	
+					</div>
+					<div class="col-3 order-list ">
+						<li>창의적 문제해결</li>
+						<ul>
+							<li>더 향상된 결과를 위해 폭 넓은 시각에서 다양한 관점을 통합해 새로운 해결안을 제시함</li>	
+						</ul>
+					</div>
+				</div>							
+			</section>		
+	</section>
+	<section class="color-section">
+			<section class="header clearfix">
+				<div class="title">color</div>
+			</section>	
+			<section class="container">
+				<div>
+					<div class="first clearfix">
+						<div class="color-box">
+							<div class="warning box-size col-1">#FCB409</div>
+							<p class="info">warning</p>
+						</div>
+						<div class="color-box">
+							<div class="inform box-size col-1">#63A2FC</div>
+							<p class="info">info</p>
+						</div>
+						<div class="color-box">
+							<div class="success box-size col-1">#44CB83</div>
+							<p class="info">success</p>
+						</div>
+						<div class="color-box">
+							<div class="primary box-size col-1">#7171ef</div>
+							<p class="info">primary</p>
+						</div>
+						<div class="color-box">
+							<div class="danger box-size col-1">#ff5448</div>
+							<p class="info">danger</p>
+						</div>
+						<div class="color-box">
+							<div class="default box-size col-1">#787f94</div>
+							<p class="info">default</p>
+						</div>
+					</div>
+					<div class="clearfix">
+						<div class="color-box">
+							<div class="rgb-1 box-size col-1"></div>
+						</div>
+						<div class="color-box">
+							<div class="rgb-2 box-size col-1"></div>
+						</div>
+						<div class="color-box">
+							<div class="rgb-3 box-size col-1"></div>
+						</div>
+						<div class="color-box">
+							<div class="rgb-4 box-size col-1"></div>
+						</div>
+						<div class="color-box">
+							<div class="rgb-5 box-size col-1"></div>
+						</div>
+						<div class="color-box">
+							<div class="box-size col-1"></div>
+						</div>
+					</div>
+					
+				</div>
+			</section>		
+	</section>
 </body>
 </html>

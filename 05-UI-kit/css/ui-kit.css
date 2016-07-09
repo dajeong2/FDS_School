@@ -1,6 +1,4 @@
-body * {
-	box-sizing: border-box;
-}
+
 body {
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -9,7 +7,7 @@ body {
 }
 
 body:hover {
-	background: linear-gradient(transparent 95%, #6F4FCD 95% );
+	background: linear-gradient(transparent 95%, #3ACDAD 95% );
 	background-size: 0.07rem 1.5rem;
 }
 
@@ -44,14 +42,19 @@ h1 {
 	line-height: 4.5rem;	
 }
 
+[class$="-section"]{
+	width: 980px;
+	padding: 3rem 4rem;
+}
+
+.container { padding-top: 3rem; }
+
+
 /*
 타이포그래피
 */
 
-[class$="-section"]{
-	width: 980px;
-	padding: 4.5rem 70px;
-}
+
 
 /*타이포그래피 전체 영역 범위*/
 /*.typography-section {
@@ -69,6 +72,8 @@ h1 {
 	margin-right: 30px;
 	font-size:1.2rem;
 	text-transform: uppercase;
+	font-weight: 500;
+	color: rgb(125,133,156);
 }
 .title, .t-size {
 	float: left;
@@ -84,6 +89,9 @@ h1 {
 }
 .ro-3 { line-height: 4.5rem }
 .ro-2 { line-height: 3rem }
+.col-1 { width: 100px; }
+.col-2 { width: 200px; }
+.col-3 { width: 300px;}
 
 /*마지막 문단은!*/
  .wrap-paragraph {
@@ -92,12 +100,61 @@ h1 {
  }
 
  /*테이블*/
+td { width: 100px; }
+
+.t-center {
+	text-align: center;
+}
+
+/*리스트*/
+[class$="-list"] {
+	float: left;
+}
+
+.first {
+	padding-bottom: 1.5rem;
+}
+
+/*color*/
+
+.color-box {
+	float: left;
+	padding-right: 25px;
+}
+
+.box-size {
+	line-height: 100px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;	
+}
+
+[class^="rgb"] {
+	height: 100px;
+}
+
+.first.clearfix {
+	padding-bottom: 1.5rem;
+}
+
+.warning { background: #FCB409;}
+
+.inform { background: #63A2FC;}
+
+.success { background: #44CB83;}
+
+.primary { background: #7171ef;}
+
+.danger { background: #ff5448;}
+
+.default { background: #787f94;}
 
 
-.
-
-
-
+.rgb-1 { background:rgb(51,55,65) ;}
+.rgb-2 { background:rgb(88,96,119) ;}
+.rgb-3 { background:rgb(125,133,156) ;}
+.rgb-4 { background:rgb(162,170,193) ;}
+.rgb-5 { background:rgb(199,207,230) ;}
 
 
 
