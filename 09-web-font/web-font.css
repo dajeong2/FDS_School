@@ -1,54 +1,92 @@
-@import "utf-8";
+@import UTF-8;
+@import url("http://api.typolink.co.kr/css?family=Signika")
+/* cyrillic-ext */
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+* { box-sizing: border-box; }
 
-/*basic-font-size 14px
-  base-line-height 1.6*/
-body {
-	width: 1280px;
-	font-size: 0.875rem;
-	line-height: 1.4rem; 
-	/*15.99px*/
-	color: black;
-	font-family: "Helvetica Neue", Helvetica,sans-serif;
-}
-h1,h2,h3,h4,h5,h6,p { margin-bottom: 1.4rem; }
-h1 { font-size:4.22rem; line-height: 4.2rem;  }
-h2 { font-size:3.25rem; line-height: 4.2rem;}
-h3 { font-size:3.36rem; line-height: 4.2rem;}
-h4 { font-size:2.4rem; line-height: 2.8rem;}
-h5 { font-size:1.71rem; line-height: 2.8rem;}
-h6 { font-size:1.22rem; line-height: 1.4rem;}
-
-/*unit:257 gutter:40 */
-#main-container::before {
-	content: '';
-	position: absolute;
-	z-index: 10000;
-	width: 1200px;
-	height: 100vh;
-	background: 
-		linear-gradient(90deg,  rgba(0,0,0,0)13.46%, rgba(255, 244, 75, 0.3) 86.54%);
-		/*linear-gradient(rgba(0,0,0,0) 95%, #E5785F 95%)*/
-	background-size:
-		297px 120px;
-		/*1px 15.99px*/
+.grid-container::before {
+	display: none;
 }
 
-[class*="unit-"] {
-	float: left;
-	margin-left: 40px;
-	background: #BFBFBF;
-	height: 580px;
-}
-.unit-2 { width: 257px;}
+/*브랜드 포스터*/
+.signika.brand-poster{ 
+	margin-top: 50px;
+	margin-left: 290px;  
+	padding: 50px 20px;
+	font-family: 'Signika';
+	line-weight: 1;
+	letter-spacing: -0.04rem;
+	font-weight: 900;
+	color: white;
+	background: #1c4f6f;
+	/*padding: 0 10px;*/}
 
-/*폰트*/
-.article {
+.signika.brand-poster .brand-type { margin-bottom: 50px; }
+.signika.brand-poster .brand-type > p { 
+	display: block; 
+	font-size: 20px; 
+	line-height: 1.4; 
+	color: #1c4f6f;
+	background: white; 
+}
+
+.signika.brand-poster .brand-slogan {
+	font-size: 48px;
+}
+
+
+.signika.brand-poster .brand-open-date {
+	font-size: 28px;
+	font-weight: 500;
+
+}
+
+
+/*transition*/
+.signika .brand-slogan {
 	overflow: hidden;
-	background: linear-gradient(rgba(0,0,0,0) 95%, #E5785F 95%); repeat;
-	background-size: 1px  1.4rem;
 }
-.article.nanum-myeongjo { font-family: 'Nanum Myeongjo', serif; }
-.article.nanum-gothic { font-family: 'Nanum Gothic', serif; }
+.signika .brand-slogan > p {
+	/*overflow: hidden;*/
+	display: block;
+	position: relative;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin-bottom: 47px;
+	/*background: yellow;*/
+}
+
+.signika .brand-slogan>p::before {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 100%;
+	width: 11px;
+	height: 48px;
+	background: #ed1c24;
+}
+
+.signika .brand-slogan>p:nth-of-type(1)::before { right: 0%; transition: 0.25s; } 
+.signika .brand-slogan>p:nth-of-type(2)::before { left: 0%; transition: 0.25s; } 
+.signika .brand-slogan>p:nth-of-type(3)::before { right: 0%; transition: 0.25s; } 
+.signika .brand-slogan>p:nth-of-type(4)::before { right: 50%; transition: all 0.25s; } 
+.signika .brand-slogan>p:nth-of-type(5)::before { right: 0%;  transition: 0.25s; } 
+.signika .brand-slogan>p:nth-of-type(6)::before { left: 20%; transition: 0.25s; } 
+
+.signika .brand-slogan>p:nth-of-type(1):hover::before { width: 45%; } 
+.signika .brand-slogan>p:nth-of-type(2):hover::before { width: 80%; } 
+.signika .brand-slogan>p:nth-of-type(3):hover::before { width: 60%; } 
+.signika .brand-slogan>p:nth-of-type(4):hover::before { width: 30%; } 
+.signika .brand-slogan>p:nth-of-type(5):hover::before { width: 20%; } 
+.signika .brand-slogan>p:nth-of-type(6):hover::before { width: 35%; } 
+
+
+/*스케일*/
+/*.signika .brand-slogan>p:nth-of-type(4)::before { left:50%; transform:scale(0); transition: all 0.25s; }
+.signika .brand-slogan>p:nth-of-type(4):hover::before { width: 80%; transform:scale(1); } */
+/*라인 이동*/
+/*.signika .brand-slogan>p:nth-of-type(4)::before { right: 50%; left:50%; transition: all 0.25s; } 
+.signika .brand-slogan>p:nth-of-type(4):hover::before { right: 25%; left: 25%; } */
+
