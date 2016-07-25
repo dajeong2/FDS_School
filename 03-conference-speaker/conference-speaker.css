@@ -1,63 +1,130 @@
-body * {
-	box-sizing: border-box;
+html, body, .grid { height: 100%; }
+body* {box-sizing: border-box;}
+
+/*그리드 시스템*/
+.grid { 
+	width: 900px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+ }
+.grid.show-grid::before {
+	content: '';
+	position: absolute;	
+	width: 100%;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: 
+		linear-gradient(to right, rgba(191, 64, 64, 0.3) 50%, transparent 50% ),
+		linear-gradient(transparent 23px, #26923f 23px);
+	background-size:  
+		450px 1px,
+		1px 1.500rem;
 }
 
-img { vertical-align: bottom; }
+.grid [class*="unit-"] { float: left;  height: 231px;}
+.unit-1 { width: 225px; }
+.unit-2 { width: 450px; }
+.unit-3 { width: 675px; }
+.unit-4 { width: 900px; }
 
 
-
-.conference-speaker .speakers { width: 900px;}
-
-.conference-speaker .speakers .speakers-photo {
-	display: block;
-	float: left;
+/*아랫단 이미지 위치 바꾸기*/
+.speaker.align-right > .speaker-photo { 
+	width: 225px; height: 231px; float: right; 
 }
 
-.speakers-bio {
-	width: 450px;
-	height: 231px;
+.speaker-info { 
+	position: relative;
 	padding-top: 55px;
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: center;
-	/*overflow: hidden;*/
-	float: left;
+	text-align: center;	
+	background: white;
+ }
+/*마우스 호버- 삼각형 아이콘*/
+.speaker-info.arrow-left:hover::after {
+	content: '';
+	position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 45%;
+    left: -10%;
+    border-top: 1rem solid transparent;
+    border-right: 1rem solid white;
+    border-bottom: 1rem solid transparent;
+}
+.speaker-info.arrow-right:hover::after {
+	content: '';
+	position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 45%;
+    right: -10%;
+    border-top: 1rem solid transparent;
+    border-left: 1rem solid white;
+    border-bottom: 1rem solid transparent;
 }
 
-.speakers-bio.layout-half { 
-	width: 225px;
-}
-
-.conference-speaker .speakers .speakers-photo.rightside {
-	float: right;
-}
-
-.speakers-bio.layout-half.rightside {
-	float: right;
-}
-.speakers.layout-half.leftside {
-	width: 450px;
-	float: left;
-}
-
-.conference-speaker .speakers-bio::after {
-	width: 30%;
-	height: 1px;
-	background: #eee;
-}
-.conference-speaker .speakers-bio .speakers-name {
-	font: 19px/1.1 "Montserrat";
+.speaker-info .speaker-name { 
 	margin-bottom: 18px;
+	font-family: "Montserrat";
+	font-size: 16px; 	/*19px*/
+	line-height: 1.1; 
+	color: #464646;
 }
 
-.conference-speaker .speakers-bio .speakers-dec {
-	font: 16px/1.5 "open-sans";
-	padding-bottom: 13px;
+.speaker-info .speaker-desc {
+	position: relative;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 28px;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	line-height: 1.5;
+	color: #464646;
 }
 
-.conference-speaker .speakers-bio .speakers-twitter .ir {
-	background-image: url("../..//")
-	
+/*가상요소*/
+.speaker-desc::before {
+	content:'';
+	position: absolute;
+	z-index: 100;
+	bottom: -13px;
+	left: 35%;
+	height: 1px;
+	width: 30%;
+	background: red;
 }
+/*트위터 아이콘 + IR기법*/
+.twitter {
+	overflow: hidden;
+	display: block;	
+	width: 15px;
+	height: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	text-indent: -9999em;
+	background: url(images/icon-twitter.png) no-repeat;
+	background-size: 15px 15px;
+}
+
+/*트위터 아이콘 마우스 호버*/
+/*.twitter::before {
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	background: url(images/icon-twitter.png) no-repeat;
+	background-size: 15px 15px;
+}*/
+
+/*.twitter:hover::before {
+	visibility: visible;
+}*/
+
 
 
